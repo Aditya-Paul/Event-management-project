@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Reservation = () => {
     return (
-        <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/0jKQdkj/Corporate-Event-Management.jpg)' }}>
+        <div className="hero min-h-screen mt-12" style={{ backgroundImage: 'url(https://i.ibb.co/0jKQdkj/Corporate-Event-Management.jpg)' }}>
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 

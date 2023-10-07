@@ -12,11 +12,13 @@ const Navbar = () => {
     }, [])
 
     const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/reservation'>Reservation</NavLink></li>
+        <li><NavLink to='/' className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "active" : ""}>Home</NavLink></li>
+        <li><NavLink to='/reservation' className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "active" : ""}>Reservation</NavLink></li>
     </>
     return (
-        <div data-aos="flip-left" data-aos-delay="1000000">
+        <div data-aos="flip-left" data-aos-delay="1000000 "className="mt-10">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
