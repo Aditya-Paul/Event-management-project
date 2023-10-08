@@ -11,16 +11,16 @@ greetign = {};
 console.log(greetign);
 ```
 
-Ans A: `{}`
+- A: `{}`
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: `undefined`
 
-<i>Write your explanation here</i>
+<i>{} must be under first bracket thats the reason we get undefined. if greetign = ({}); we will get an object{} value</i>
 
 </p>
 </details>
