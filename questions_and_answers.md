@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: "12"
 
-<i>Write your explanation here</i>
+<i>+ sign use for number and string. when we add a number with a string intepretor converts the number into a string and concatenates both together.</i>
 
 </p>
 </details>
