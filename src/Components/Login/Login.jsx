@@ -45,8 +45,8 @@ const Login = () => {
     return (
         <>
             <Navbar></Navbar>
-            <div className="hero min-h-screen bg-base-200 ">
-                <div className=" grid-cols-1 md:grid-cols-2 items-center  justify-center flex-row">
+            <div className="hero bg-base-200 mt-4">
+                <div className="grid gap-10 grid-cols-1 md:grid-cols-2 items-center  justify-center ">
                     <div className="card  w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handlelogin} className="card-body">
                             <div className="form-control">
