@@ -1,19 +1,19 @@
 [
-    { "id": 1,
-      "image": "https://example.com/team_member1.jpg",
+    { "id": "1",
+      "image": "https://i.ibb.co/dWSpfLh/Alice.jpg",
       "name": "Alice Anderson",
       "job_position": "Event Planner",
       "experience": "8 years"
     },
-    { "id": 2,
-      "image": "https://example.com/team_member2.jpg",
+    { "id": "2",
+      "image": "https://i.ibb.co/2hyHFcK/David.png",
       "name": "David Davis",
       "job_position": "Marketing Coordinator",
       "experience": "5 years"
     },
     { 
-      "id": 3,
-      "image": "https://example.com/team_member3.jpg",
+      "id": "3",
+      "image": "https://i.ibb.co/fFVJBpx/Ella.jpg",
       "name": "Ella Evans",
       "job_position": "Venue Manager",
       "experience": "6 years"

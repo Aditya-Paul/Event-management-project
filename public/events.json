@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "name": "Wedding Planning",
     "image": "https://i.ibb.co/0cQY5DZ/Wedding-Planning.jpg",
     "price": 50000,
@@ -10,7 +10,7 @@
     "description": "Our Platinum Wedding Package is designed to make your wedding day a dream come true. With a dedicated team of experts, we take care of every detail, ensuring that your special day is stress-free and memorable. From exquisite venue decorations to gourmet catering, stunning photography, and personalized services, we leave no stone unturned in creating the perfect wedding experience. Let us turn your vision into reality and create memories that will last a lifetime. Trust us to make your wedding day as beautiful as your love story."
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "Birthday Party Coordination",
     "image": "https://i.ibb.co/kmM2yM7/Birthday-Party-Coordination.jpg",
     "price": 25000,
@@ -20,7 +20,7 @@
     "description": "With our Deluxe Birthday Party Package, you can celebrate your special day in style. Our expert coordinators will work closely with you to create a personalized birthday experience that reflects your personality and preferences. From themed decorations to entertainment options that will wow your guests, we ensure that your birthday party is a memorable event. Relax and enjoy your celebration while we handle all the planning and coordination. Make your birthday an unforgettable experience with our Deluxe Package."
   },
   {
-    "id": 3,
+    "id": "3",
     "name": "Corporate Event Management",
     "image": "https://i.ibb.co/0jKQdkj/Corporate-Event-Management.jpg",
     "price": 20000,
@@ -30,7 +30,7 @@
     "description": "Our Executive Corporate Event Package is tailored to meet the unique needs of your business gatherings. Whether it's a conference, seminar, or corporate retreat, we provide professional event management services that leave a lasting impression on your attendees. From selecting the ideal venue to coordinating all aspects of the event, including logistics, catering, audio-visual setup, and more, we ensure a seamless and successful corporate event. With our expertise, your corporate event will be a reflection of your professionalism and commitment to excellence."
   },
   {
-    "id": 4,
+    "id": "4",
     "name": "Concert Production",
     "image": "https://i.ibb.co/XVz5pQ8/Concert-Production.jpg",
     "price": 200000,
@@ -40,7 +40,7 @@
     "description": "Experience the ultimate VIP Concert Experience with our top-tier production services. We turn your concert vision into a reality, ensuring that every detail is executed flawlessly. From stage design and setup to state-of-the-art sound and lighting, we create a concert atmosphere that will leave your audience in awe. Our team of experts takes care of all technical aspects, allowing you to focus on your performance. Elevate your concert to the next level with our VIP Concert Experience and give your fans a show they'll never forget."
   },
   {
-    "id": 5,
+    "id": "5",
     "name": "Private Party Hosting",
     "image": "https://i.ibb.co/0c1y86N/Private-Party-Hosting.jpg",
     "price": 12000,
@@ -50,7 +50,7 @@
     "description": "Host an Exclusive Private Party without the stress and hassle. Our all-inclusive hosting service covers every aspect of your event. From crafting personalized invitations to arranging entertainment, decorations, and even post-party cleanup, we handle it all. You can relax and enjoy quality time with your guests while we ensure that your private party is a resounding success. Let us turn your private party into an exclusive and unforgettable gathering."
   },
   {
-    "id": 6,
+    "id": "6",
     "name": "Conference Planning",
     "image": "https://i.ibb.co/Pr6GBZr/Conference-Planning.jpg",
     "price": 35000,

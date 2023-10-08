@@ -31,7 +31,7 @@ const Home = () => {
             <div className="bg-gradient-to-r from-white via-yellow-400  to-gray-200 py-4 mt-14">
                 <div className="  max-w-fit mx-auto md:p-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
                     {
-                        service_data.map(data => <Service_cards key={data._id} value={data}></Service_cards>)
+                        service_data.map(data => <Service_cards key={data.id} value={data}></Service_cards>)
                     }
                 </div>
             </div>

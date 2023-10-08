@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
-import { AiOutlineArrowRight } from "react-icons/ai";
+
 import { Link } from "react-router-dom";
 
-const Service_cards = ({ value }) => {
-    const {id, image, name, short_description, price } = value;
+
+const SingleCard = ({card}) => {
+    const {image,name,short_description,price} = card;
     return (
-        <div className="">
+        <div className="max-w-fit mx-auto items-center justify-center">
             <div className="card w-96 h-[500px] glass p-2 items-center ">
                 <div>
                     <figure><img className="rounded-lg" src={image} alt="car!" /></figure>
@@ -16,15 +17,13 @@ const Service_cards = ({ value }) => {
                         <p>{short_description}</p>
                         <h2 className="card-title">Price: ${price}</h2>
                         <div className=" ">
-                            <button className="btn btn-primary"><Link to={`/services/${id}`}>
-                            See details <AiOutlineArrowRight/></Link> </button>
+                            <button className="btn btn-primary"><Link to="/">Go Back Home</Link></button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
 
-export default Service_cards;
+export default SingleCard;
