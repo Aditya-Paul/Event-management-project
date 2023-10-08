@@ -11,7 +11,7 @@ greetign = {};
 console.log(greetign);
 ```
 
-- A: `{}`
+Ans A: `{}`
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
