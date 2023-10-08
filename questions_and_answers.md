@@ -20,7 +20,7 @@ console.log(greetign);
 
 #### Answer: C: `undefined`
 
-<i>{} must be under first bracket thats the reason we get undefined. if greetign = ({}); we will get an object{} value</i>
+<i>{} Must be under first bracket thats the reason we get undefined. if greetign = ({}); we will get an object{} value.</i>
 
 </p>
 </details>
@@ -45,7 +45,7 @@ sum(1, "2");
 
 #### Answer: C: "12"
 
-<i>+ sign use for number and string. when we add a number with a string intepretor converts the number into a string and concatenates both together.</i>
+<i>+ Sign use for number and string. When we add a number with a string intepretor converts the number into a string and concatenates both together.</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: ['🍕', '🍫', '🥑', '🍔']
 
-<i>Write your explanation here</i>
+<i>info.favoriteFood = "🍝"; doennot modefy the food array. Thats why we get oprion A.</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: Hi there, undefined
 
-<i>Write your explanation here</i>
+<i>When we call a function , function always axpect the parameter but when we call it without passing the parameter , the missing parameter assigned the value undefined by default.</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>If number is truthy count will be increamented by 1. There are 4 number is this array. In those values only 0 is the falsy calue . Thats the reason when num = 0 that mens count won,t be increment by +1, but when we get 1 mens truthy value counts will be increamented by +1, so for this 3 truthy value we get 3.</i>
 
 </p>
 </details>
