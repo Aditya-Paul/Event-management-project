@@ -1,16 +1,27 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Reservation = () => {
+    const {user} = useContext(AuthContext)
+    const handlereservation = () =>{
+
+        {
+            user? Swal.fire("Good", "You passed a private route ", "success"):
+            Swal.fire("Oops!", "This is connected to a private route you you have to login first", "error");
+        }
+    }
     return (
         <div className="hero min-h-screen mt-12" style={{ backgroundImage: 'url(https://i.ibb.co/0jKQdkj/Corporate-Event-Management.jpg)' }}>
             <div className="hero-overlay bg-opacity-60"></div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
 
                 <div className="col hero-content text-center text-neutral-content">
                     <div className="max-w-md">
                         <h1 className="mb-5 text-5xl font-bold">Get the party started</h1>
                         <p className="mb-5">As the premier event planning company in the area.Each evnet and client is unique and we belive our service should be as well.</p>
-                        <button className="btn btn-primary"><Link to='/reservation'>Make a reservation</Link></button>
+                        <button onClick={handlereservation} className="btn btn-primary"><Link to='/reservation'>Make a reservation</Link></button>
                     </div>
                 </div>
 

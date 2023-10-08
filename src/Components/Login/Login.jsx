@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -6,7 +6,9 @@ import Swal from "sweetalert2";
 
 const Login = () => {
     const {googlesignIN,userlogin} = useContext(AuthContext)
-    console.log('ok',googlesignIN)
+    
+    const location = useLocation();
+    const navigate = useNavigate();
     const handlelogin = e => {
         e.preventDefault();
 
@@ -23,6 +25,7 @@ const Login = () => {
         userlogin(email,password)
         .then(res=>{
             Swal.fire("Good job!", "Successfully logged in", "success");
+            navigate(location?.state? location.state: '/')
             console.log(res.user)
         })
         .catch(error =>{
@@ -36,6 +39,7 @@ const Login = () => {
         .then(res=>{
             console.log(res.user)
             Swal.fire("Good job!", "Successfully logged in", "success");
+            location
             
         })
         .catch(error=>{
@@ -43,9 +47,9 @@ const Login = () => {
             console.log(error)})
     }
     return (
-        <>
+        <div>
             <Navbar></Navbar>
-            <div className="hero bg-base-200 mt-4">
+            <div className="hero bg-base-200 pt-32 md:pt-28 lg:pt-0">
                 <div className="grid gap-10 grid-cols-1 md:grid-cols-2 items-center  justify-center ">
                     <div className="card  w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handlelogin} className="card-body">
@@ -81,7 +85,7 @@ const Login = () => {
                 </div>
 
             </div>
-        </>
+        </div>
     );
 };
 

@@ -6,15 +6,15 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 
 const Navbar = () => {
-    const { user,userlogout } = useContext(AuthContext)
+    const { user, userlogout } = useContext(AuthContext)
 
-    const handlesignout =()=>{
+    const handlesignout = () => {
         userlogout()
-        .then(res =>{
-            console.log(res.user)
-            Swal.fire("Good job!", "Logged out successfully", "success");
-        })
-        .catch()
+            .then(res => {
+                console.log(res.user)
+                Swal.fire("Good job!", "Logged out successfully", "success");
+            })
+            .catch()
     }
 
     useEffect(() => {
@@ -25,10 +25,10 @@ const Navbar = () => {
     }, [])
 
     const links = <>
-        <li><NavLink to='/' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""}>Home</NavLink></li>
-        <li><NavLink to='/reservation' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""}>Reservation</NavLink></li>
+        <li><NavLink to='/' >Home</NavLink></li>
+        <li><NavLink to='/reservation' >Reservation</NavLink></li>
+        <li><NavLink to='/description'>Blog</NavLink></li>
+
     </>
     return (
         <div data-aos="flip-left" data-aos-delay="1000000 " className="">
@@ -50,21 +50,30 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-2">
-                {
-                    user ? <div><button className="btn" onClick={handlesignout}><Link to='/'>Logout</Link></button></div>
-                    :
-                    <div className="space-x-3">
-                        <button className="btn " ><Link to='/login'>Login</Link></button>
-                        <button className="btn " ><Link to='/register'>Register</Link></button>
-                    </div>
-                }
-                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                    <div className="w-10 rounded-full">
-                        <img src="https://i.ibb.co/2PDYx3x/IMG-3736.jpg" />
-                    </div>
-                </label>
+                    {
+                        user ?
+                            <div className="flex flex-col md:flex-row  items-center gap-2">
+                                <h2>{user.displayName}</h2>
+                                <div>
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                        <div className="w-10 rounded-full">
+                                            <img src={user.photoURL} />
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <button className="btn" onClick={handlesignout}><Link to='/'>Logout</Link>
+                                </button>
+                            </div>
+                            :
+                            <div className="space-x-3">
+                                <button className="btn " ><Link to='/login'>Login</Link></button>
+                                <button className="btn " ><Link to='/register'>Register</Link></button>
+                            </div>
+                    }
+
+                </div>
             </div>
-        </div>
         </div >
     );
 };

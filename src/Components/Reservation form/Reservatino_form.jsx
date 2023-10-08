@@ -6,7 +6,7 @@ const Reservatino_form = () => {
     return (
         <>
         <Navbar></Navbar>
-        <div className="">
+        <div className=" mt-12 md:mt-0">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <form className="card-body">

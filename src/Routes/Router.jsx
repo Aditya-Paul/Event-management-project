@@ -8,6 +8,7 @@ import Services_card_details from "../Components/Services_card_details/Services_
 import MemberCard from "../Components/Team_member/MemberCard/MemberCard";
 import ErroPage from "../Components/ErrorPage/ErroPage";
 import Privateroute from "./Privateroute";
+import Docs from "../Components/Docs/Docs";
 
 const router = createBrowserRouter([
     {
@@ -27,12 +28,17 @@ const router = createBrowserRouter([
             },
             {
                 path: "/teams/:id",
-                element: <Privateroute><MemberCard></MemberCard></Privateroute>,
+                element: <MemberCard></MemberCard>,
                 loader: () =>fetch('/teams.json'),
             },
             {
                 path: "/reservation",
                 element: <Privateroute><Reservatino_form></Reservatino_form></Privateroute>
+            },
+            {
+                path: "/description",
+                element: <Privateroute><Docs></Docs></Privateroute>,
+                loader: () =>fetch('/events.json'),
             },
             {
                 path: "/register",

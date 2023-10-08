@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import SingleMcard from "../SingleMcard/SingleMcard";
+import Navbar from "../../Navbar/Navbar";
 
 
 const MemberCard = () => {
@@ -14,6 +15,7 @@ const MemberCard = () => {
     },[id,])
     return (
         <div>
+            <Navbar></Navbar>
             <SingleMcard value={data}></SingleMcard>
         </div>
     );

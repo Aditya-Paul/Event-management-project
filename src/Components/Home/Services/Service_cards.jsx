@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Service_cards = ({ value }) => {
     const {id, image, name, short_description, price } = value;
     return (
+        
         <div className="">
             <div className="card w-96 h-[500px] glass p-2 items-center ">
                 <div>
@@ -17,12 +17,12 @@ const Service_cards = ({ value }) => {
                         <h2 className="card-title">Price: ${price}</h2>
                         <div className=" ">
                             <button className="btn btn-primary"><Link to={`/services/${id}`}>
-                            See details <AiOutlineArrowRight/></Link> </button>
+                            See details</Link> </button>
                         </div>
                     </div>
                 </div>
             </div>
-
+            
         </div>
     );
 };
