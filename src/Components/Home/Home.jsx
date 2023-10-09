@@ -41,7 +41,7 @@ const Home = () => {
             <Reservation></Reservation>
 
             {/* team */}
-            <div className="mt-10 bg-gradient-to-r from-yellow-50 via-gray-200 to-blue-200 py-5">
+            <div className="mt-10 bg-gradient-to-r from-purple-400 via-purple-300 to-purple-200 py-5">
                 <div className="text-center  ">
                     <div>
                         <h2 className="text-3xl font-medium"><span className="text-2xl font-light text-orange-500">Adevents</span>Team Members</h2>

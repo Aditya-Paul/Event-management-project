@@ -21,42 +21,42 @@ const Reservation = () => {
                     <div className="max-w-md">
                         <h1 className="mb-5 text-5xl font-bold">Get the party started</h1>
                         <p className="mb-5">As the premier event planning company in the area.Each evnet and client is unique and we belive our service should be as well.</p>
-                        <button onClick={handlereservation} className="btn btn-primary"><Link to='/reservation'>Make a reservation</Link></button>
+                        <button onClick={handlereservation} className="btn btn-primary"><Link to='/reservation' className="text-black">Make a reservation</Link></button>
                     </div>
                 </div>
 
                 {/* progress */}
                 <div>
-                    <h2 className="text-5xl font-extrabold text-purple-400">Our Pregress</h2>
+                    <h2 className="text-5xl font-extrabold text-yellow-300">Our Progress</h2>
 
-                    <div>
-                        <p className="text-3xl font-normal text-white">Wedding Planning</p>
-                        <progress className="progress progress-primary w-56 bg-white" value={80} max="100"></progress>
+                    <div className="mt-4">
+                        <p className="text-3xl font-normal text-purple-200">Wedding Planning</p>
+                        <progress className="progress progress-primary w-64 bg-white" value={80} max="100"></progress>
                     </div>
 
                     <div>
-                        <p className="text-3xl font-normal text-white">Birthday Party Coordination</p>
-                        <progress className="progress progress-primary w-56 bg-white" value={40} max="100"></progress>
+                        <p className="text-3xl font-normal text-purple-200">Birthday Party Coordination</p>
+                        <progress className="progress progress-primary w-64 bg-white" value={40} max="100"></progress>
                     </div>
 
                     <div>
-                        <p className="text-3xl font-normal text-white">Corporate Event Management</p>
-                        <progress className="progress progress-primary w-56 bg-white" value={60} max="100"></progress>
+                        <p className="text-3xl font-normal text-purple-200">Corporate Event Management</p>
+                        <progress className="progress progress-primary w-64 bg-white" value={60} max="100"></progress>
                     </div>
 
                     <div>
-                        <p className="text-3xl font-normal text-white">Concert Production</p>
-                        <progress className="progress progress-primary w-56 bg-white" value={90} max="100"></progress>
+                        <p className="text-3xl font-normal text-purple-200">Concert Production</p>
+                        <progress className="progress progress-primary w-64 bg-white" value={90} max="100"></progress>
                     </div>
 
                     <div>
-                        <p className="text-3xl font-normal text-white">Private Party Hosting</p>
-                        <progress className="progress progress-primary w-56 bg-white" value={70} max="100"></progress>
+                        <p className="text-3xl font-normal text-purple-200">Private Party Hosting</p>
+                        <progress className="progress progress-primary w-64 bg-white" value={70} max="100"></progress>
                     </div>
 
                     <div>
-                        <p className="text-3xl font-normal text-white">Conference Planning</p>
-                        <progress className="progress progress-primary w-56 bg-white" value={60} max="100"></progress>
+                        <p className="text-3xl font-normal text-purple-200">Conference Planning</p>
+                        <progress className="progress progress-primary w-64 bg-white" value={60} max="100"></progress>
                     </div>
 
                     
