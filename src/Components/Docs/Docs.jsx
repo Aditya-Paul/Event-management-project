@@ -11,7 +11,7 @@ const Docs = () => {
     return (
         <>
             <Navbar></Navbar>
-            <div className="pt-16 md:pt-16 lg:pt-0" >
+            <div className="pt-16 md:pt-20 lg:pt-0" >
 
                 {
                     service_data.map(item => <DocsDetails key={item.id} value={item}></DocsDetails>)
